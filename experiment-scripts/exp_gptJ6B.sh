@@ -75,11 +75,11 @@ set -e
 # yourself using an interactive session, or check the docs:
 #     http://computing.help.inf.ed.ac.uk/cluster-computing
 SCRATCH_DISK=/disk/scratch
-SCRATCH_HOME=${SCRATCH_DISK}/${USER}
+SCRATCH_HOME="/home/tomerashuach/delpii/specificityplus/running_exp"
 mkdir -p ${SCRATCH_HOME}
 
 # Activate your conda environment
-CONDA_ENV_NAME=memit
+CONDA_ENV_NAME=memit_env
 echo "Activating conda environment: ${CONDA_ENV_NAME}"
 conda activate ${CONDA_ENV_NAME}
 

@@ -1,4 +1,4 @@
-name: memit
+name: specificity_plus
 channels:
   - pytorch
   - defaults

@@ -18,7 +18,7 @@ What it does:
 import pandas as pd
 from typing import Union
 
-from datasets import tqdm
+from tqdm import tqdm
 
 from experiments.evaluate import main as run, get_run_dir
 from experiments.e2e_analyze import get_case_df

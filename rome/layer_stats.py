@@ -32,9 +32,9 @@ def main():
     def aa(*args, **kwargs):
         parser.add_argument(*args, **kwargs)
 
-    aa("--model_name", default="gpt2-xl", choices=MODELS)
+    aa("--model_name", default="EleutherAI/gpt-j-6B", choices=MODELS)
     aa("--dataset", default="wikipedia", choices=["wikitext", "wikipedia"])
-    aa("--layers", default=[17], type=lambda x: list(map(int, x.split(","))))
+    aa("--layers", default=[3,4,5,6,7,8], type=lambda x: list(map(int, x.split(","))))
     aa("--to_collect", default=["mom2"], type=lambda x: x.split(","))
     aa("--sample_size", default=100000, type=lambda x: None if x == "all" else int(x))
     aa("--batch_tokens", default=None, type=lambda x: None if x == "any" else int(x))
